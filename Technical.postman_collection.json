@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "984927fa-1aa0-453b-8213-694bfec841fe",
+		"name": "Technical",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24012774",
+		"_collection_link": "https://dark-meteor-715906.postman.co/workspace/Team-Workspace~cf64f7b6-0236-44af-84b5-2e9a6e78224b/collection/24012774-984927fa-1aa0-453b-8213-694bfec841fe?action=share&source=collection_link&creator=24012774"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mohamad",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678Aa",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "0988424611",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "35.2424",
+							"type": "text"
+						},
+						{
+							"key": "lang",
+							"value": "35.4654",
+							"type": "text"
+						},
+						{
+							"key": "bank",
+							"value": "AlBaraka",
+							"type": "text"
+						},
+						{
+							"key": "iban",
+							"value": "354444",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "residence",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "subCategoryIds[]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "subCategoryIds[]",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "subCategoryIds[]",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "password",
+							"value": "12345678Aa",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "0988424611",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Active Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/activeUsers",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"activeUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Unactive Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/getUser",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"getUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activate User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/activityUser/{{id}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"activityUser",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/getCategories",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"getCategories"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000"
+		}
+	]
+}
